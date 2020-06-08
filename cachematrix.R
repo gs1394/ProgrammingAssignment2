@@ -1,6 +1,6 @@
 ## Writing function for Inverse of a Matrix
 
-## Cache Matrix object to create inverse matrix
+## Cache Matrix object to create inverse
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -44,13 +44,8 @@ cacheSolve <- function(x, ...) {
     
     m <- solve(data) %*% data
     
-    ## Set the inverse to the object
     x$setInverse(m)
     
-    ## Return the matrix
     return(m)
     
 }
-
-
-
